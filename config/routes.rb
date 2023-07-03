@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/my_examples", controller: "my_examples", action: "show"
+  get "/bottles", controller: "bottles", action: "bottles"
 end
