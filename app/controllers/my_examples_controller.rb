@@ -16,11 +16,23 @@ class MyExamplesController < ApplicationController
     render json: { feature1: fortune,
                    feature2: [rand(1..60), rand(1..60), rand(1..60), rand(1..60), rand(1..60), rand(1..60)],
                    feature3: 0 }
+
     #index += 1
+    #another way: make fortune[] array
+    #render json: {fortune: fortune.sample}
+
+    #another way: create an array number = [] and loop: numbers << rand(1..60)
+
   end
 
   #def print_msg
 
   #render json: {value: 0}
   # end
+
+  def counter_method
+    count = 0
+    count += 1
+    render json: { count: count }
+  end
 end
