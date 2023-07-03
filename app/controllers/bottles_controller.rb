@@ -30,8 +30,8 @@ class BottlesController < ApplicationController
       end
     end
 
-    #render json: { bottles: array }
+    render json: { bottles: array }
 
-    render inline: "<html><body><h4><i>" + text + "</h4></body></html>"
+    #render inline: "<html><body><h4><i>" + text + "</h4></body></html>"
   end
 end

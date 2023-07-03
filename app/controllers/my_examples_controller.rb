@@ -19,8 +19,8 @@ class MyExamplesController < ApplicationController
     #index += 1
   end
 
-  def print_msg
+  #def print_msg
 
-    #render json: {value: 0}
-  end
+  #render json: {value: 0}
+  # end
 end
